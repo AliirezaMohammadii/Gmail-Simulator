@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConversationPageController">
+   <children>
+      <ListView fx:id="messagesList" layoutX="-4.0" layoutY="145.0" onMouseClicked="#select" prefHeight="407.0" prefWidth="454.0" style="-fx-background-color: #ffffff;" />
+      <VBox layoutX="180.0" layoutY="-1.0" prefHeight="80.0" prefWidth="270.0">
+         <children>
+            <Text fill="#e53318" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT" wrappingWidth="95.96832275390625">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <StackPane prefHeight="52.0" prefWidth="270.0" style="-fx-background-color: #044620;">
+               <children>
+                  <Text fx:id="conversationSubject" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <ImageView fx:id="backImage" fitHeight="62.0" fitWidth="48.0" layoutX="-1.0" layoutY="8.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blockUserImage" fitHeight="50.0" fitWidth="48.0" layoutX="392.0" layoutY="88.0" onMouseClicked="#blockUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-unfriend-filled-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="updateImage" fitHeight="48.0" fitWidth="48.0" layoutX="337.0" layoutY="88.0" onMouseClicked="#updateList" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-update-left-rotation-96.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpCont">
+   <children>
+      <VBox layoutX="59.0" layoutY="113.0" prefHeight="226.0" prefWidth="182.0" spacing="35.0">
+         <children>
+            <TextField fx:id="firstNameField" layoutX="20.0" layoutY="30.0" promptText="first name" />
+            <TextField fx:id="lastNameField" promptText="last name" />
+            <TextField fx:id="usernameField" layoutX="20.0" layoutY="30.0" promptText="username" />
+            <TextField fx:id="passwordField" layoutX="20.0" layoutY="30.0" promptText="password" />
+         </children>
+      </VBox>
+      <HBox layoutX="60.0" layoutY="377.0" prefHeight="38.0" prefWidth="157.0" spacing="25.0">
+         <children>
+            <TextField fx:id="birthYearField" prefHeight="30.0" prefWidth="35.0" promptText="YY" />
+            <TextField fx:id="birthMonthField" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="35.0" promptText="MM" />
+            <TextField fx:id="birthDayField" layoutX="30.0" layoutY="10.0" prefHeight="30.0" prefWidth="35.0" promptText="DD" />
+         </children>
+      </HBox>
+      <Button layoutX="186.0" layoutY="457.0" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1F13AA;" text="SIGN UP" textFill="WHITE" AnchorPane.leftAnchor="186.0" AnchorPane.rightAnchor="182.0" AnchorPane.topAnchor="457.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fill="#8c6f6f" layoutX="249.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@gmail.com">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="80.0" layoutX="185.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/gmailImage.png" />
+         </image>
+      </ImageView>
+      <Text fill="#b73737" layoutX="57.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Date">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#a7a0a0" layoutX="104.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#a7a0a0" layoutX="164.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backImage" fitHeight="62.0" fitWidth="48.0" layoutX="5.0" layoutY="7.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

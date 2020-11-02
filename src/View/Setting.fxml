@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SettingPageController">
+   <children>
+      <VBox layoutX="20.0" layoutY="192.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName:">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LastName:">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BirthDate:">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber:">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexuality:">
+               <font>
+                  <Font name="Century Gothic" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="162.0" layoutY="190.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Text fx:id="firstNameField" strokeType="OUTSIDE" strokeWidth="0.0" text="FirstName">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="lastNameField" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LastName">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordFiled" layoutX="10.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="birthDateFiled" layoutX="10.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Born">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="PhoneNumberField" layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PhoneNumber">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+            <Text fx:id="SexualityField" layoutX="10.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexuality">
+               <font>
+                  <Font name="Century" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="392.0" layoutY="188.0" prefHeight="286.0" prefWidth="37.0" spacing="19.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#firstNameChange" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#lastNameChange" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="65.0" onMouseClicked="#passwordChange" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="120.0" onMouseClicked="#birthDateChange" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="176.0" onMouseClicked="#phoneNumberChange" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="231.0" onMouseClicked="#changeSexuality" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fx:id="profileImage" fitHeight="100.0" fitWidth="100.0" layoutX="343.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-male-user-filled-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="308.0" layoutY="67.0" onMouseClicked="#changeProfileImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-refresh-480.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="48.0" layoutX="1.0" layoutY="9.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/back.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="230.0" layoutY="-2.0" prefHeight="62.0" prefWidth="221.0" style="-fx-background-color: #dc0f0f;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="SETTING">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <TextField fx:id="changeFirstNameField" layoutX="159.0" layoutY="192.0" visible="false" />
+      <ImageView fx:id="doneImage" fitHeight="37.0" fitWidth="40.0" layoutX="408.0" layoutY="509.0" onMouseClicked="#done" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-ok-96.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="changeLastNameField" layoutX="159.0" layoutY="244.0" visible="false" />
+      <TextField fx:id="changePasswordField" layoutX="162.0" layoutY="296.0" visible="false" />
+      <TextField fx:id="changePhoneNumberField" layoutX="164.0" layoutY="401.0" visible="false" />
+      <ListView fx:id="imagesList" layoutX="7.0" layoutY="172.0" onMouseClicked="#selectImage" prefHeight="371.0" prefWidth="198.0" visible="false" />
+      <ImageView fitHeight="70.0" fitWidth="48.0" layoutX="22.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-unfriend-filled-100.png" />
+         </image>
+      </ImageView>
+      <HBox fx:id="birthDateHBox" layoutX="164.0" layoutY="348.0" prefHeight="35.0" prefWidth="152.0" spacing="10.0" visible="false">
+         <children>
+            <TextField fx:id="yearField" promptText="YY" />
+            <TextField fx:id="monthField" layoutX="10.0" layoutY="10.0" promptText="MM" />
+            <TextField fx:id="dayField" layoutX="110.0" layoutY="10.0" promptText="DD" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

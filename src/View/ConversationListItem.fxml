@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageField" fitHeight="80.0" fitWidth="80.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="nameField" layoutX="157.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Constantia" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="subjectField" layoutX="157.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject">
+         <font>
+            <Font name="Ebrima" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="someCharsField" layoutX="101.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="some chars">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <VBox layoutX="365.0" layoutY="6.0" prefHeight="45.0" prefWidth="35.0" spacing="1.0">
+         <children>
+            <Text fx:id="DateField" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="timeField" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="325.0" layoutY="7.0" prefHeight="33.0" prefWidth="35.0" spacing="4.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time :">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Text layoutX="101.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender :">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject :">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EmailAddress :">
+         <font>
+            <Font name="Corbel" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailAddress" layoutX="194.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EmailAddress">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="400.0" layoutY="83.0" onMouseClicked="#deleteConversation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-trash-can-480.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="355.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-star-96.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="numOfStarredMessages" fill="WHITE" layoutX="371.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font name="Century Gothic Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="34.0" fitWidth="40.0" layoutX="314.0" layoutY="83.0" onMouseClicked="#entryToConversation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-login-rounded-96.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

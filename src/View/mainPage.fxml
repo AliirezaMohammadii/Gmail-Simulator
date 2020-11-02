@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.mainPageController">
+   <children>
+      <ImageView fx:id="profileImageFiled" fitHeight="120.0" fitWidth="120.0" layoutX="323.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-male-user-filled-100.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="nameField" fill="#1d5d99" layoutX="45.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="EmailAddressField" layoutX="46.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EmailAddress">
+         <font>
+            <Font name="Corbel" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="backImage" fitHeight="62.0" fitWidth="48.0" layoutX="9.0" layoutY="9.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-sign-out-filled-100.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="193.0" prefHeight="62.0" prefWidth="258.0" style="-fx-background-color: #dc0f0f;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="USER PANEL" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <ImageView fx:id="outboxImage" fitHeight="112.0" fitWidth="120.0" layoutX="64.0" layoutY="363.0" onMouseClicked="#outboxPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-email-send-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="inboxListImage" fitHeight="112.0" fitWidth="120.0" layoutX="252.0" layoutY="228.0" onMouseClicked="#inboxPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-inbox-filled-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="createMessageImage" fitHeight="112.0" fitWidth="120.0" layoutX="258.0" layoutY="363.0" onMouseClicked="#createNewMessage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-new-message-filled-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sentListImage" fitHeight="112.0" fitWidth="120.0" layoutX="64.0" layoutY="231.0" onMouseClicked="#sentMessagesPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-outbox-filled-100.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="71.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SENT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="258.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INBOX">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="259.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPOSE">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="14.0" layoutY="477.0" onMouseClicked="#settingPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-gear-64.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="83.0" layoutY="403.0" rotate="-17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUTBOX">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

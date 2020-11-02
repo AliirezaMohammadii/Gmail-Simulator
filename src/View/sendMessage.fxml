@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.sendMessageController">
+   <children>
+      <VBox layoutX="42.0" layoutY="129.0" prefHeight="96.0" prefWidth="164.0" spacing="30.0">
+         <children>
+            <TextField fx:id="receiverAddressFiled" promptText="To" />
+            <TextField fx:id="subjectFiled" layoutX="10.0" layoutY="10.0" promptText="Subject" />
+         </children>
+      </VBox>
+      <ImageView fx:id="backImage" fitHeight="62.0" fitWidth="48.0" layoutY="9.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/back.png" />
+         </image>
+      </ImageView>
+      <StackPane layoutX="155.0" layoutY="-2.0" prefHeight="62.0" prefWidth="295.0" style="-fx-background-color: #dc0f0f;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPOSE MESSAGE" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <ImageView fx:id="sendMessageImage" fitHeight="84.0" fitWidth="100.0" layoutX="344.0" layoutY="76.0" onMouseClicked="#sendMessage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/sentListImage.png" />
+         </image></ImageView>
+      <ImageView fx:id="selectFileImage" fitHeight="96.0" fitWidth="110.0" layoutX="341.0" layoutY="230.0" onMouseClicked="#selectFile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-file-400.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="messageText" layoutX="36.0" layoutY="236.0" prefHeight="260.0" prefWidth="295.0" promptText="Compose Mail ...">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <Text layoutX="214.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@gmail.com">
+         <font>
+            <Font name="Corbel" size="20.0" />
+         </font>
+      </Text>
+      <VBox fx:id="fileTypeVBox" layoutX="279.0" layoutY="257.0" prefHeight="141.0" prefWidth="30.0" spacing="10.0" visible="false">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" onMouseClicked="#showPicturesList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-picture-480.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#showMusicsList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-music-library-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="50.0" onMouseClicked="#showVideosList" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-video-playlist-90.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ListView fx:id="filesListView" layoutX="36.0" layoutY="278.0" onMouseClicked="#select" prefHeight="246.0" prefWidth="180.0" visible="false" />
+      <ImageView fx:id="fileSelectedImage" fitHeight="84.0" fitWidth="84.0" layoutX="347.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-check-file-90.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="fileTypeText" layoutX="360.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No File" wrappingWidth="84.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="fileAddressText" layoutX="360.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FileAddress" wrappingWidth="83.99999999999977">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <StackPane fx:id="selectFileStackPane" layoutX="36.0" layoutY="237.0" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #dc0f0f;" visible="false">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT FILE" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <ImageView fx:id="doneImage" fitHeight="48.0" fitWidth="50.0" layoutX="222.0" layoutY="477.0" onMouseClicked="#done" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-ok-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="20.0" layoutX="412.0" layoutY="231.0" onMouseClicked="#deleteFile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-trash-can-480.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cancelImage" fitHeight="40.0" fitWidth="32.0" layoutX="407.0" layoutY="509.0" onMouseClicked="#cancelOperation" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/256-256-61602bb3d5f907c150d29127362045e9-cross.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

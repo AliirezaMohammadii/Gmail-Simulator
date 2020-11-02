@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignInCont">
+   <children>
+      <VBox layoutX="118.0" layoutY="179.0" prefHeight="154.0" prefWidth="187.0" spacing="50.0">
+         <children>
+            <TextField fx:id="usernameField" promptText="USERNAME" />
+            <TextField fx:id="passwordField" layoutX="10.0" layoutY="10.0" promptText="PASSWORD" />
+         </children>
+      </VBox>
+      <Button fx:id="signIn" layoutX="265.0" layoutY="351.0" mnemonicParsing="false" onAction="#signIn" style="-fx-background-color: #0C8DB7;" text="SIGN IN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="100.0" layoutY="351.0" mnemonicParsing="false" onAction="#signUp" style="-fx-background-color: #0C8DB7;" text="CREATE ACCOUNT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="91.0" fitWidth="135.0" layoutX="165.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/gmailImage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

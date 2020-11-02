@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="senderImage" fitHeight="82.0" fitWidth="82.0" layoutX="337.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="senderName" fill="#570606" layoutX="73.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="Constantia" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="senderEmailAddress" fill="#570606" layoutX="114.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="emailAddress">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Subject" fill="#570606" layoutX="77.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <VBox layoutX="11.0" layoutY="6.0" prefHeight="38.0" prefWidth="35.0" spacing="4.0">
+         <children>
+            <Text fill="#133d79" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font></Text>
+            <Text fill="#133d79" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :">
+               <font>
+                  <Font name="Century" size="12.0" />
+               </font></Text>
+         </children>
+      </VBox>
+      <VBox layoutX="50.0" layoutY="5.0" prefHeight="35.0" prefWidth="35.0" spacing="1.0">
+         <children>
+            <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="time" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <ImageView fx:id="noFileImage" fitHeight="56.0" fitWidth="82.0" layoutX="377.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/NoFileImage.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="messageText" layoutX="10.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="message Text" wrappingWidth="312.53680419921875">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Line endX="324.0000305175781" endY="-1.52587890625E-5" layoutX="126.0" layoutY="126.0" startX="-125.99998474121094" startY="-1.52587890625E-5" stroke="#e5cece" />
+      <HBox layoutX="302.0" layoutY="3.0" prefHeight="23.0" prefWidth="95.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="replyImage" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#replyMessage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-reply-arrow-filled-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="forwardImage" fitHeight="35.0" fitWidth="35.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#forwardMessage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-fast-forward-96.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="deleteImage" fitHeight="35.0" fitWidth="35.0" layoutX="64.0" layoutY="10.0" onMouseClicked="#deleteMessage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Shapes/icons8-trash-can-480.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fx:id="emptyTickImage" fitHeight="35.0" fitWidth="35.0" layoutX="395.0" layoutY="302.0" onMouseClicked="#emptyTickAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-double-tick-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fillTickImage" fitHeight="35.0" fitWidth="35.0" layoutX="395.0" layoutY="301.0" onMouseClicked="#fillTickAction" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-double-tick-filled-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fillStarImage" fitHeight="35.0" fitWidth="35.0" layoutX="354.0" layoutY="302.0" onMouseClicked="#fillStarAction" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-star-96.png" />
+         </image>
+      </ImageView>
+      <Text fill="#133d79" layoutX="13.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject :">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font></Text>
+      <Text fill="#133d79" layoutX="12.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender :">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#133d79" layoutX="12.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EmailAddress :">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="emptyStarImage" fitHeight="35.0" fitWidth="35.0" layoutX="354.0" layoutY="302.0" onMouseClicked="#emptyStarAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-star-96(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="fileAddressTextField" layoutX="291.0" layoutY="230.0" visible="false" />
+      <Text fx:id="fileAddressText" layoutX="291.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FileAddress:" visible="false">
+         <font>
+            <Font name="Corbel" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="fileImage" fitHeight="56.0" fitWidth="82.0" layoutX="376.0" layoutY="145.0" onMouseClicked="#showFile" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/icons8-file-400.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="noFileField" layoutX="386.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NoFile">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="zarbdarImage" fitHeight="15.0" fitWidth="15.0" layoutX="291.0" layoutY="199.0" onMouseClicked="#removeFileAddressFields" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../Resources/Shapes/256-256-61602bb3d5f907c150d29127362045e9-cross.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
